@@ -6,14 +6,14 @@
 	"main": "index.js",
 	"scripts": {
 		"dev": "nodemon",
-		"build": "tsc"
+		"build": "tsc -p ./src/tsconfig.json"
 	},
 	"nodemonConfig": {
 		"watch": [
 			"src"
 		],
 		"ext": "ts",
-		"exec": "npm run build && node dist/server.js"
+		"exec": "npm run build && node dist2/server.js"
 	},
 	"keywords": [],
 	"author": "",
